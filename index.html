@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>EduVoice</title>
+    <link href='https://fonts.googleapis.com/css?family=Arvo' rel='stylesheet'>
+
+    <b><title>EduVoice</title></b>
     <meta charset="utf-8" />
     <meta
       name="viewport"
@@ -11,11 +13,29 @@
     <noscript>
       <link rel="stylesheet" href="assets/css/noscript.css" />
     </noscript>
+    <style>
+      .black-text {
+        color: #272774;
+      }
+
+      .black-text .button,
+      .black-text .btn {
+        background-color: #272774;
+        color: white;
+        border: none;
+      }
+
+      .black-text .button:hover,
+      .black-text .btn:hover {
+        background-color: #333;
+      }
+    </style>
   </head>
   <body class="is-preload">
     <!-- Sidebar -->
     <section id="sidebar">
       <div class="inner">
+        <img src="images/eduvoice2.png" alt="Logo" id="logo">
         <nav>
           <ul>
             <li><a href="#intro">Welcome</a></li>
@@ -30,18 +50,13 @@
     <div id="wrapper">
       <!-- Intro -->
       <section id="intro" class="wrapper style1 fullscreen fade-up">
-        <div class="inner">
+        <div class="inner center-content black-text">
           <div class="typewriter">
             <h1>EduVoice</h1>
           </div>
-
-          <img src="images/learning.gif" alt="Learning" style="width: 100%; max-width: 600px; margin: 20px 0;" />
-
-          <p>
-            Where education meets innovation.<br />
-          </p>
+          <p>Where education meets innovation.<br /></p>
           <ul class="actions">
-            <li><a href="#one" class="button scrolly">Learn more</a></li>
+            <li><a href="/about.html" class="button scrolly">About Us</a></li>
           </ul>
         </div>
       </section>
@@ -50,67 +65,80 @@
       <section id="one" class="wrapper style2 spotlights">
         <section>
           <a href="#" class="image">
-            <img src="images/pic01.jpg" alt="" data-position="center center" />
+            <img src="images/speech.png" alt="" data-position="center center" />
           </a>
           <div class="content">
             <div class="inner">
-              <h2>Voice to Text</h2>
+              <h2>Speech to Text</h2>
               <p>
-                A simple tool that transcribes your device's microphone to text on a screen.
+                A tool that transcribes your device's microphone to text on a screen.
               </p>
               <ul class="actions">
-                <li><a href="voicetext.html" class="btn">Click Here!</a></li>
+                <li><a href="voicetext.html" class="btn black-text">Click Here!</a></li>
               </ul>
             </div>
           </div>
         </section>
         <section>
           <a href="#" class="image">
-            <img src="images/pic02.jpg" alt="" data-position="top center" />
+            <img src="images/chatbot.png" alt="" data-position="top center" />
           </a>
           <div class="content">
             <div class="inner">
-              <h2>Feugiat consequat</h2>
+              <h2>EduVoice AI</h2>
               <p>
-                Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam
-                turpis mauris, eu ultricies erat malesuada quis. Aliquam
-                dapibus.
+                Our EduVoice AI acts as a personal AI tutor for your needs, 
+                if you need clarification on topics ranging from Calculus, to History,
+                we can help!
               </p>
               <ul class="actions">
-                <li><a href="generic.html" class="btn">Learn more</a></li>
+                <li><a href="chatbot.html" class="btn black-text">Click Here!</a></li>
               </ul>
             </div>
           </div>
         </section>
         <section>
           <a href="#" class="image">
-            <img src="images/pic03.jpg" alt="" data-position="25% 25%" />
+            <img src="images/transcript.png" alt="" data-position="25% 25%" />
           </a>
           <div class="content">
             <div class="inner">
-              <h2>Ultricies aliquam</h2>
+              <h2>Transcript To Notes</h2>
               <p>
-                Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam
-                turpis mauris, eu ultricies erat malesuada quis. Aliquam
-                dapibus.
+                Use Our PDF to notes feature to change your previously transcripted words into well organized, legible student notes.
+                We keep all of the relevant information and organize it in a way that is easy to understand and learn from.
               </p>
               <ul class="actions">
-                <li><a href="generic.html" class="btn">Learn more</a></li>
+                <li><a href="transcriptnotes.html" class="btn black-text">Click Here!</a></li>
               </ul>
             </div>
           </div>
         </section>
       </section>
-
+      <section id="one" class="wrapper style2 spotlights">
+        <section>
+          <a href="#" class="image">
+            <img src="images/timer.png" alt="" data-position="center center" />
+          </a>
+          <div class="content">
+            <div class="inner">
+              <h2>Pomodoro Timer</h2>
+              <p>
+                An education study timer in which you do focused work during time intervals and take a 5 minute break.
+              </p>
+              <ul class="actions">
+                <li><a href="pomodoro.html" class="btn black-text">Click Here!</a></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        </section>
       <!-- Two -->
       <section id="two" class="wrapper style3 fade-up">
         <div class="inner">
           <h2>Problems and Goals</h2>
           <p>
-            Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam
-            turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus,
-            lacus eget hendrerit bibendum, urna est aliquam sem, sit amet
-            imperdiet est velit quis lorem.
+            Here are some of the problems that we aim to solve, and some of our technology and methods we plan on using to solve them!
           </p>
           <div class="features">
             <section>
@@ -121,30 +149,30 @@
               </p>
             </section>
             <section>
-              <span class="icon solid major fa-lock"></span>
-              <h3>Aliquam sed nullam</h3>
+              <span class="icon major fa-gem"></span>
+              <h3>Our Technology</h3>
               <p>
-                Phasellus convallis elit id ullam corper amet et pulvinar. Duis
-                aliquam turpis mauris, sed ultricies erat dapibus.
+                Our speech-to-text recognition and chatbot software addresses these issues by providing a real-time transcription of spoken words into text, 
+                significantly enhancing accessibility and inclusivity.
               </p>
             </section>
             <section>
-              <span class="icon solid major fa-cog"></span>
+              <span class="icon solid major fa-code"></span>
               <h3>What they need?</h3>
               <p>
                 Around 430 million people worldwide require rehabilitation for disabling hearing loss.
               </p>
             </section>
             <section>
-              <span class="icon solid major fa-desktop"></span>
-              <h3>Veroeros quis lorem</h3>
+              <span class="icon major fa-gem"></span>
+              <h3>Real-Time transcription</h3>
               <p>
-                Phasellus convallis elit id ullam corper amet et pulvinar. Duis
-                aliquam turpis mauris, sed ultricies erat dapibus.
+                Real-time transcription ensures that deaf students 
+                can follow along with lectures and discussions instantly.
               </p>
             </section>
             <section>
-              <span class="icon solid major fa-link"></span>
+              <span class="icon solid major fa-code"></span>
               <h3>High Exaustion Levels</h3>
               <p>
                 60% of deaf students reporting higher levels of exhaustion compared to their hearing peers.
@@ -152,15 +180,14 @@
             </section>
             <section>
               <span class="icon major fa-gem"></span>
-              <h3>Aliquam urna dapibus</h3>
+              <h3>Our Chatbot</h3>
               <p>
-                Phasellus convallis elit id ullam corper amet et pulvinar. Duis
-                aliquam turpis mauris, sed ultricies erat dapibus.
+                This chatbot assists the hearing impaired when they are not sure of 
+                what the instructor said or just want answers and clarification
               </p>
             </section>
           </div>
           <ul class="actions">
-            <li><a href="generic.html" class="button">Learn more</a></li>
           </ul>
         </div>
       </section>

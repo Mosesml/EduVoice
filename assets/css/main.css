@@ -25,7 +25,15 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
-
+title {
+	color: #2a2a73;
+	font-weight: bold;
+	line-height: 1.5;
+		margin: 0 0 0.5em 0;
+}
+p {
+	font-family: 'Arvo';
+}
 ol, ul {
 	list-style: none;
 }
@@ -51,7 +59,7 @@ table {
 	margin: 0 auto; /* Gives that scrolling effect as the typing happens */
 	letter-spacing: .15em; /* Adjust as needed */
 	animation: 
-	  typing 3.5s steps(40, end),
+	  typing 2.0s steps(40, end),
 	  blink-caret .75s step-end infinite;
   }
   
@@ -64,7 +72,7 @@ table {
   /* The typewriter cursor effect */
   @keyframes blink-caret {
 	from, to { border-color: transparent }
-	50% { border-color: orange; }
+	50% { border-color: rgb(0, 0, 0); }
   }
 
 body {
@@ -115,7 +123,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #312450;
+		background: #182262;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -238,8 +246,8 @@ input, select, textarea {
 		margin: 0 0 2em 0;
 	}
 
-	h1, h2, h3, h4, h5, h6 {
-		color: #ffffff;
+	h2, h3, h4, h5, h6 {
+		color: rgb(255, 255, 255);
 		font-weight: bold;
 		line-height: 1.5;
 		margin: 0 0 0.5em 0;
@@ -251,7 +259,7 @@ input, select, textarea {
 		}
 
 	h1 {
-		font-size: 2.75em;
+		font-size: 4em;
 	}
 
 		h1.major {
@@ -261,10 +269,10 @@ input, select, textarea {
 		}
 
 			h1.major:after {
-				background-image: -moz-linear-gradient(to right, #5e42a6, #b74e91);
-				background-image: -webkit-linear-gradient(to right, #5e42a6, #b74e91);
-				background-image: -ms-linear-gradient(to right, #5e42a6, #b74e91);
-				background-image: linear-gradient(to right, #5e42a6, #b74e91);
+				background-image: -moz-linear-gradient(to right, #5e42a6, #6087a7);
+				background-image: -webkit-linear-gradient(to right, #5e42a6, #6087a7);
+				background-image: -ms-linear-gradient(to right, #5e42a6, #6087a7);
+				background-image: linear-gradient(to right, #5e42a6, #6087a7);
 				-moz-transition: max-width 0.2s ease;
 				-webkit-transition: max-width 0.2s ease;
 				-ms-transition: max-width 0.2s ease;
@@ -2508,7 +2516,7 @@ input, select, textarea {
 		input[type="radio"]:checked + label:before {
 			background: #ffffff;
 			border-color: #ffffff;
-			color: #b74e91;
+			color: #4eb2b7;
 			content: '\f00c';
 		}
 
@@ -2600,27 +2608,27 @@ input, select, textarea {
 			}
 
 				.wrapper.style1 .icon.major:before {
-					color: #5e42a6;
+					color: #37b8cb;
 				}
 
 				.wrapper.style1-alt .icon.major:before {
-					color: #493382;
+					color: #37b8cb;
 				}
 
 				.wrapper.style2 .icon.major:before {
-					color: #5052b5;
+					color: #37b8cb;
 				}
 
 				.wrapper.style2-alt .icon.major:before {
-					color: #3e4094;
+					color: #37b8cb;
 				}
 
 				.wrapper.style3 .icon.major:before {
-					color: #b74e91;
+					color: #37b8cb;
 				}
 
 				.wrapper.style3-alt .icon.major:before {
-					color: #953d75;
+					color: #37b8cb;
 				}
 
 /* Image */
@@ -3320,7 +3328,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style3 {
-			background-color: #b74e91;
+			background-color: #464695;
 		}
 
 		.wrapper.style3-alt {
@@ -3429,15 +3437,17 @@ input, select, textarea {
 
 /* Header */
 
-	#header {
-		display: -moz-flex;
-		display: -webkit-flex;
-		display: -ms-flex;
-		display: flex;
-		background-color: #5e42a6;
-		cursor: default;
-		padding: 1.75em 2em;
-	}
+#header {
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    background-image: url('images/skyy.gif'); /* Replace with the path to your GIF */
+    background-size: cover; /* Ensures the GIF covers the entire header */
+    background-repeat: no-repeat; /* Prevents repeating the GIF */
+    cursor: default;
+    padding: 1.75em 2em;
+}
 
 		#header > .title {
 			border: 0;
@@ -3583,12 +3593,18 @@ input, select, textarea {
 	#header + #wrapper + #footer > .inner {
 		margin: 0 auto;
 	}
-
+	#logo {
+		position: absolute;
+		top: 0; /* Set to 0 to move it to the top */
+		right: 30px; /* Adjust as needed */
+		width: 225px; /* Adjust as needed */
+		height: 225px; /* Adjust as needed */
+	  }
 /* Sidebar */
 
 	#sidebar {
 		padding: 2.5em 2.5em 0.5em 2.5em ;
-		background: #312450;
+		background: #3e3e87;
 		cursor: default;
 		height: 100vh;
 		left: 0;
@@ -3829,10 +3845,10 @@ input, select, textarea {
 			}
 
 			#sidebar nav a:after {
-				background-image: -moz-linear-gradient(to right, #5e42a6, #b74e91);
-				background-image: -webkit-linear-gradient(to right, #5e42a6, #b74e91);
-				background-image: -ms-linear-gradient(to right, #5e42a6, #b74e91);
-				background-image: linear-gradient(to right, #5e42a6, #b74e91);
+				background-image: -moz-linear-gradient(to right, #716fb2, #b74e91);
+				background-image: -webkit-linear-gradient(to right, #716fb2, #b74e91);
+				background-image: -ms-linear-gradient(to right, #716fb2, #b74e91);
+				background-image: linear-gradient(to right, #716fb2, #b74e91);
 				-moz-transition: max-width 0.2s ease;
 				-webkit-transition: max-width 0.2s ease;
 				-ms-transition: max-width 0.2s ease;
@@ -3937,13 +3953,26 @@ input, select, textarea {
 /* Intro */
 
 	#intro {
-		background-attachment: fixed;
-		background-image: url('images/Learning.gif');
+		background-image: url('images/school.gif');
 		background-position: center center; /* Center the background image */
 		background-repeat: no-repeat;
 		background-size: cover; /* Cover the entire section */
 		background-attachment: scroll; /* Scroll with the page */
 	}
+	#intro .overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
+		z-index: 1;
+	  }
+	  
+	  #intro .inner {
+		position: relative;
+		z-index: 2;
+	  }
 
 		#intro p {
 			font-size: 1.25em;
