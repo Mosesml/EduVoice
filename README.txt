@@ -1,33 +1,74 @@
-Hyperspace by HTML5 UP
-html5up.net | @ajlkn
-Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+Chatbot with LangChain and Ollama
+This repository contains a chatbot implementation using LangChain and Ollama, an open-source large language model (LLM). Follow the steps below to set up your environment and run the chatbot.
+
+Prerequisites
+Python 3.7 or higher
+pip (Python package installer)
+A virtual environment tool (e.g., venv)
 
 
-So I've had the wireframe for this particular design kicking around for some time, but with all
-the other interesting (and in some cases, semi-secret) projects I've been working on it took me
-a little while to get to actually designing and coding it. Fortunately, things have eased up
-enough for me to finaly get around to it, so I'm happy to introduce Hyperspace: a fun, blocky,
-one-page design with a lot of color, a bit of animation, and an additional "generic" page template
-(because hey, even one-page sites usually need an interior page or two). Hope you dig it :)
+Installation
+1. Clone the Repository
+First, clone this repository to your local machine:
 
-Demo images* courtesy of Unsplash, a radtastic collection of CC0 (public domain) images
-you can use for pretty much whatever.
-
-(* = not included)
-
-AJ
-aj@lkn.io | @ajlkn
+git clone https://github.com/yourusername/your-repository.git
+cd your-repository
 
 
-Credits:
+2. Create and Activate a Virtual Environment
+Create a virtual environment to manage project dependencies:
 
-	Demo Images:
-		Unsplash (unsplash.com)
+python3 -m venv chatbot-env
+Activate the virtual environment:
 
-	Icons:
-		Font Awesome (fontawesome.io)
+On macOS/Linux:
 
-	Other:
-		jQuery (jquery.com)
-		Scrollex (github.com/ajlkn/jquery.scrollex)
-		Responsive Tools (github.com/ajlkn/responsive-tools)
+source chatbot-env/bin/activate
+
+3. Install Dependencies
+Install the required Python packages using pip:
+
+pip install langchain langchain-ollama ollama
+
+If you would like to contribute to this project, please fork the repository and submit a pull request with your changes. Ensure that your code adheres to the project’s coding standards and includes appropriate documentation.
+
+Feel free to adjust the details according to your specific setup or project needs.
+
+
+
+
+
+
+EduVoice
+EduVoice is a web application designed to convert speech transcripts into organized notes. This project includes a frontend interface and a backend API. The frontend allows users to upload a PDF transcript, while the backend processes the PDF and generates summarized notes.
+
+Prerequisites
+Ensure you have the following installed:
+
+Python 3.12 or later
+Node.js 
+Installation
+Backend Setup
+Clone the Repository
+
+git clone https://github.com/yourusername/eduvoice.git
+cd eduvoice
+
+
+Create a Virtual Environment
+
+python -m venv venv
+Activate the Virtual Environment
+
+On macOS/Linux:
+
+source venv/bin/activate
+
+Install Required Python Packages
+
+pip install -r requirements.txt
+Download NLTK Data
+
+Run the following Python command to download the necessary NLTK data:
+
+python -c "import nltk; nltk.download('punkt')"
